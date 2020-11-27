@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+		<div class="container wrapper">
+			<img src="images/logo.png" alt="logo" class="header-logo">
+			<ul class="header-menu" id="header-menu">
+				<li class="header-menu-item"><a href="index.html">Home</a></li>
+				<li class="header-menu-item"><a href="about.html">About Us</a></li>
+				<li class="header-menu-item"><a href="#">Portfolio</a></li>
+				<li class="header-menu-item"><a href="#">Services</a></li>
+				<li class="header-menu-item"><a href="#">Blog</a></li>
+				<li class="header-menu-item header-menu-item--active"><a href="contact.html">Contact Us</a></li>
+				<li class="header-menu-icon">
+                    <a href="javascript:void(0);" onclick="menuFunc()">&#9776;</a>
+                </li>
+			</ul>
+		</div>
+	</header>
+    
+    <section class="contact">
+        <div class="container">
+            <h4 class="contact-title">Connect With Us</h4>
+            <div class="line"></div>
+            <p class="contact-text">34/1 Zhandosov St KZ, Almaty, DC 20500, The Republic of Kazakhstan. Tel: (202) 456-1111</p>
+            <form action="#" class="contact-form">
+                <div class="wrapper">
+                    <input type="text" placeholder="Your Name *" required="required">
+                    <input type="email" placeholder="Your Email *" required="required">
+                </div>
+                <textarea name="contact-form-message" id="contact-form-message" cols="30" rows="10" class="contact-form-message" placeholder="Your Message *"></textarea>
+                <button class="contact-btn">Send Message</button>
+            </form>
+        </div>
+	</section>
+	
+	<div class="map">
+		<div class="container">
+			<h4 class="map-title">Location</h4>
+			<div id="map"></div>
+		</div>
+	</div>
+
+    <div class="footer">
+		<div class="container wrapper">
+			<div class="footer-left">
+				<ul class="footer-left-list wrapper">
+					<li class="footer-left-list-item"><a href="index.html">Home</a></li>
+					<li class="footer-left-list-item"><a href="#">|</a></li>
+					<li class="footer-left-list-item"><a href="about.html">About Us</a></li>
+					<li class="footer-left-list-item"><a href="#">|</a></li>
+					<li class="footer-left-list-item"><a href="#">Portfolio</a></li>
+					<li class="footer-left-list-item"><a href="#">|</a></li>
+					<li class="footer-left-list-item"><a href="#">Services</a></li>
+					<li class="footer-left-list-item"><a href="#">|</a></li>
+					<li class="footer-left-list-item"><a href="#">Blog</a></li>
+					<li class="footer-left-list-item"><a href="#">|</a></li>
+					<li class="footer-left-list-item"><a href="contact.html">Contact Us</a></li>
+				</ul>
+				<p class="footer-left-text">© 2010 CreativeStudio. All Rights Reserved</p>
+			</div>
+
+			<div class="footer-right"><img src="images/logo-footer.png" alt=""></div>
+		</div>
+	</div>
+
+	<script>
+		function initMap() {
+			var uluru = {lat: 43.234975, lng: 76.909646};
+			var map = new google.maps.Map(
+				document.getElementById('map'), {zoom: 10, center: uluru});
+			var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+	</script>
+	<script async defer
+    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKRJyaWMT-jvx36xRhFvMB_RaBl7uyIJQ&callback=initMap">
+    </script>
+	<script src="script.js"></script>
+</body>
+</html>

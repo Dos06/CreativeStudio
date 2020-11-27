@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Creative Studio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container wrapper">
+			<img src="images/logo.png" alt="logo" class="header-logo">
+			<ul class="header-menu" id="header-menu">
+				<li class="header-menu-item header-menu-item--active"><a href="index.html">Home</a></li>
+				<li class="header-menu-item"><a href="about.html">About Us</a></li>
+				<li class="header-menu-item"><a href="#">Portfolio</a></li>
+				<li class="header-menu-item"><a href="#">Services</a></li>
+				<li class="header-menu-item"><a href="#">Blog</a></li>
+				<li class="header-menu-item"><a href="contact.html">Contact Us</a></li>
+				<li class="header-menu-icon">
+                    <a href="javascript:void(0);" onclick="menuFunc()">&#9776;</a>
+                </li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="main">
+		<div class="container">
+			<div class="main-img">
+				<img src="images/header-image.jpg" alt="img">
+				<!-- <div class="main-links">
+					<div class="main-titles wrapper">
+						<h4 class="main-title"><a href="#">Here's some nice work</a></h4>
+						<h4 class="main-title"><a href="#">View portfolio»</a></h4>
+					</div>
+				</div> -->
+			</div>
+
+			<!-- <div class="wrapper"> -->
+			<div>
+				<ul class="main-list wrapper">
+					<li class="main-list-item">
+						<div class="wrapper">
+							<img src="images/arrow.png" alt="arrow" class="main-list-item-img">
+							<a href="about.html"><h4 class="main-list-item-title">About Us</h4></a>
+						</div>
+						<div class="line"></div>
+						<p class="main-list-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero. </p>
+						<a href="#" class="main-list-item-link">Read More</a>
+					</li>
+					<li class="main-list-item">
+						<div class="wrapper">
+							<img src="images/arrow.png" alt="arrow" class="main-list-item-img">
+							<a href="#"><h4 class="main-list-item-title">Our Benefits</h4></a>
+						</div>
+						<div class="line"></div>
+						<ul class="main-list-item-list">
+							<li class="main-list-item-list-item">
+								<img src="images/check.png" alt="" class="main-list-item-list-item-img">
+								<p class="main-list-item-list-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. </p>
+							</li>
+							<li class="main-list-item-list-item">
+								<img src="images/check.png" alt="" class="main-list-item-list-item-img">
+								<p class="main-list-item-list-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. </p>
+							</li>
+							<li class="main-list-item-list-item">
+								<img src="images/check.png" alt="" class="main-list-item-list-item-img">
+								<p class="main-list-item-list-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. </p>
+							</li>
+						</ul>
+					</li>
+					<li class="main-list-item">
+						<div class="wrapper">
+							<img src="images/arrow.png" alt="arrow" class="main-list-item-img">
+							<a href="#"><h4 class="main-list-item-title">Testimotionals</h4></a>
+						</div>
+						<div class="line"></div>
+						<p class="main-list-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. </p>
+						<p class="main-list-item-text italic">Rafi, Graphicfuel.com</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="main-portfolio">
+				<div class="wrapper">
+					<img src="images/arrow.png" alt="arrow" class="main-list-item-img">
+					<a href="#"><h4 class="main-portfolio-title">Our Portfolio</h4></a>
+				</div>
+				<div>
+					<ul class="main-portfolio-list wrapper">
+						<li class="main-portfolio-list-item">
+							<a href="#" class="main-portfolio-list-item-link">
+								<img src="images/Portfolio_1.png" alt="" class="main-portfolio-list-item-img">
+							</a>
+						</li>
+						<li class="main-portfolio-list-item">
+							<a href="#" class="main-portfolio-list-item-link">
+								<img src="images/Portfolio_2.png" alt="" class="main-portfolio-list-item-img">
+							</a>
+						</li>
+						<li class="main-portfolio-list-item">
+							<a href="#" class="main-portfolio-list-item-link">
+								<img src="images/Portfolio_3.png" alt="" class="main-portfolio-list-item-img">
+							</a>
+						</li>
+						<li class="main-portfolio-list-item">
+							<a href="#" class="main-portfolio-list-item-link">
+								<img src="images/Portfolio_4.png" alt="" class="main-portfolio-list-item-img">
+							</a>
+						</li>
+
+
+
+						<!-- <li class="main-portfolio-list-item">
+							<img src="images/portfolio_1.jpg" alt="" class="main-portfolio-list-item-img">
+							<div class="main-portfolio-list-item-link"><a href="#" class="main-portfolio-list-item-link-text">VIEW</a></div>
+						</li>
+						<li class="main-portfolio-list-item">
+							<img src="images/portfolio_2.jpg" alt="" class="main-portfolio-list-item-img">
+							<div class="main-portfolio-list-item-link"><a href="#" class="main-portfolio-list-item-link-text">VIEW</a></div>
+						</li>
+						<li class="main-portfolio-list-item">
+							<img src="images/portfolio_3.jpg" alt="" class="main-portfolio-list-item-img">
+							<div class="main-portfolio-list-item-link"><a href="#" class="main-portfolio-list-item-link-text">VIEW</a></div>
+						</li>
+						<li class="main-portfolio-list-item">
+							<img src="images/portfolio_4.jpg" alt="" class="main-portfolio-list-item-img">
+							<div class="main-portfolio-list-item-link"><a href="#" class="main-portfolio-list-item-link-text">VIEW</a></div>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+
+			<div class="main-bottom wrapper">
+				<div class="main-bottom-blog">
+					<div class="wrapper">
+						<img src="images/arrow.png" alt="arrow" class="main-list-item-img">
+						<a href="#"><h4 class="main-bottom-blog-title">Blog Updates</h4></a>
+					</div>
+					<p class="main-bottom-blog-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nulla id orci malesuada porta posuere quis massa. Nunc vitae purus non augue scelerisque ultricies vitae et velit. Sed vitae lectus id sem lobortis scelerisque. Praesent eget consequat libero. 
+					</p>
+				</div>
+				<div class="main-bottom-blog">
+					<div class="wrapper">
+						<img src="images/arrow.png" alt="arrow" class="main-list-item-img">
+						<a href="contact.html"><h4 class="main-bottom-contact-title">Connect with us</h4></a>
+					</div>
+					<ul class="main-bottom-contact-list wrapper">
+						<li class="main-bottom-contact-list-item"><a href="contact.html"><img src="images/twitter.png" alt=""></a></li>
+						<li class="main-bottom-contact-list-item"><a href="contact.html"><img src="images/facebook.png" alt=""></a></li>
+						<li class="main-bottom-contact-list-item"><a href="contact.html"><img src="images/flickr.png" alt=""></a></li>
+						<li class="main-bottom-contact-list-item"><a href="contact.html"><img src="images/rss.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<div class="container wrapper">
+			<div class="footer-left">
+				<ul class="footer-left-list wrapper">
+					<li class="footer-left-list-item"><a href="index.html">Home</a></li>
+					<li class="footer-left-list-item"><a href="#">|</a></li>
+					<li class="footer-left-list-item"><a href="about.html">About Us</a></li>
+					<li class="footer-left-list-item"><a href="#">|</a></li>
+					<li class="footer-left-list-item"><a href="#">Portfolio</a></li>
+					<li class="footer-left-list-item"><a href="#">|</a></li>
+					<li class="footer-left-list-item"><a href="#">Services</a></li>
+					<li class="footer-left-list-item"><a href="#">|</a></li>
+					<li class="footer-left-list-item"><a href="#">Blog</a></li>
+					<li class="footer-left-list-item"><a href="#">|</a></li>
+					<li class="footer-left-list-item"><a href="contact.html">Contact Us</a></li>
+				</ul>
+				<p class="footer-left-text">© 2010 CreativeStudio. All Rights Reserved</p>
+			</div>
+
+			<div class="footer-right"><img src="images/logo-footer.png" alt=""></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
